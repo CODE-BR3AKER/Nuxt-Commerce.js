@@ -63,7 +63,7 @@
             </p>
 
             <div class="flex items-center" id="store-nav-content">
-              <span class="pl-3 inline-block no-underline hover:text-black">
+              <nuxt-link to="/categories" class="pl-3 inline-block no-underline hover:text-black">
                 <svg
                   class="fill-current hover:text-black"
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@
                 >
                   <path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z" />
                 </svg>
-              </span>
+              </nuxt-link>
               <input
                 type="search"
                 name="search"

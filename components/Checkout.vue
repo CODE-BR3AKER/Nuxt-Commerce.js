@@ -2,7 +2,7 @@
   <div class="bg-gray-300" :value="value">
     <div class="py-12">
       <div
-        class="max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg md:max-w-5xl"
+        class="max-w-md mx-auto bg-gray-100 shadow-lg md:max-w-5xl"
       >
         <div class="md:flex">
           <div class="w-full p-4 px-5 py-5">
@@ -23,7 +23,7 @@
                     :key="product.product_id"
                   >
                     <div class="flex items-center">
-                      <img :src="product.media.source" width="60" />
+                      <img :src="product.media.source" width="60" class="hidden md:inline"/>
                       <div class="flex flex-col ml-3">
                         <span class="md:text-md font-medium">{{
                           product.name
@@ -72,7 +72,7 @@
                 >
                   <div class="flex items-center">
                     <span
-                      class="text-md font-medium text-blue-500 cursor-pointer"
+                      class="text-md font-medium text-gray-900 cursor-pointer"
                       @click.stop="$emit('closeDrawer')"
                       >Close cart</span
                     >
@@ -94,7 +94,7 @@
                   </div>
                 </div>
                 <nuxt-link
-                  class="h-12 flex items-center justify-center w-1/2 md:w-1/3 mx-auto bg-blue-500 rounded focus:outline-none text-white hover:bg-blue-600"
+                  class="h-12 flex items-center justify-center w-1/2 md:w-1/3 mx-auto bg-gray-900 focus:outline-none text-white hover:bg-black"
                   to="/checkout"
                   @click="genToken(cart.id)"
                 >
