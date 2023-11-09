@@ -1,4 +1,4 @@
-# Casual-shop
+# Nuxt Commerce.js starter
 
 ## 1- About the project 🛍️:
 
